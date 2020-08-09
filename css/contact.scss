@@ -1,0 +1,45 @@
+$white: #f8f8f8;
+
+#contact-footer-planet {
+	background: linear-gradient(180deg, #17C5FD 0%, #13B2E2 100%);	
+}
+
+form#ts-email-form {
+	margin-top: 10px;
+
+	* {
+		font-family: "Gabriela", "Cambria", "Palatino", serif;
+		font-size: 1rem;
+		border: none;
+	}
+
+	label {
+		padding: 0px;
+	}
+	
+	input {
+		width: 60%;
+		padding: 8px 10px;
+		margin: 5px 0 1rem;
+		background: $white;
+		outline: none;
+	}
+
+	textarea {
+		width: 100%;
+		padding: 8px 10px;
+		margin: 5px 0 1rem;
+		background: $white;
+		outline: none;
+	}
+
+	button {
+		padding: 15px 40px;
+		color: $white;
+		outline: none;
+		border: none;
+		&:active {
+			background: linear-gradient(180deg, #A50000 0%, #b93939 100%);
+		}
+	}
+}
