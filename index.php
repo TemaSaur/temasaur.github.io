@@ -1,19 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Gabriela&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/main.css">
-	<title>TemaSaur</title>
-	<script src="js/cursor.js"></script>
-	<script src="js/planet.js"></script>
-	<script src="js/stars.js"></script>
-	<script src="js/app.js"></script>
-</head>
-<body>
-	<span id="cursor"></span>
-
+<?php
+	include_once "includes/hea.php";
+	echo "TemaSaur";
+	include_once "includes/der.php";
+	?>
+	
 	<aside id="ts-stars">
 	</aside>
 
@@ -26,11 +16,10 @@
 		<span class="ts-planet-orange ts-planet-big ts-div-shadow ts-circle anim-0" id="planet-5"></span>
 		<span class="ts-planet-red ts-planet-small ts-div-shadow ts-circle anim-1" id="planet-6"></span>
 	</aside>
-
 	<main>
 		<section id="ts-bg-top">
 
-			<a href="/" id="ts-lang" class="ts-circle-center ts-div-shadow ts-planet-red js-cursor-hover">
+			<a href="ru/" id="ts-lang" class="ts-circle-center ts-div-shadow ts-planet-red js-cursor-hover">
 				<h2 class="ts-shadow">en/ru</h2>
 			</a>
 			
@@ -55,16 +44,16 @@
 
 		<section id="ts-bg-bottom">
 			<div id="ts-nav">
-				<a href="about.html" id="ts-about" class="ts-circle-center ts-div-shadow ts-planet-orange js-cursor-hover">
+				<a href="about" id="ts-about" class="ts-circle-center ts-div-shadow ts-planet-orange js-cursor-hover">
 					<span id="thanks"></span>
 					<h3 class="ts-shadow">About me</h3>
 				</a>
 				<span class="ts-planet-blue ts-planet-medium ts-div-shadow ts-circle anim-1" id="planet-7"></span>
-				<a href="projects.html" id="ts-portfolio" class="ts-circle-center ts-div-shadow ts-planet-red js-cursor-hover">
+				<a href="projects" id="ts-portfolio" class="ts-circle-center ts-div-shadow ts-planet-red js-cursor-hover">
 					<h3 class="ts-shadow">Projects</h3>
 				</a>
 				<span class="ts-planet-gray ts-planet-small ts-div-shadow ts-circle anim-2" id="planet-8"></span>
-				<a href="contact.html" id="ts-contact" class="ts-circle-center ts-div-shadow ts-planet-blue js-cursor-hover">
+				<a href="contact" id="ts-contact" class="ts-circle-center ts-div-shadow ts-planet-blue js-cursor-hover">
 					<h3 class="ts-shadow">Contact me</h3>
 				</a>
 				<span class="ts-planet-gray ts-planet-small ts-div-shadow ts-circle anim-1" id="planet-9"></span>
