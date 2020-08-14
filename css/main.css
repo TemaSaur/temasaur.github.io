@@ -269,6 +269,14 @@ a.ts-circle-center:hover {
   }
 }
 
+a.link {
+  color: #fff3cc !important;
+}
+
+a.link:hover {
+  text-decoration: none;
+}
+
 main.ts-page {
   width: 100%;
   min-height: 100vh;
@@ -287,8 +295,8 @@ main.ts-page {
   max-width: 640px;
   -webkit-animation: .7s b forwards;
           animation: .7s b forwards;
-  -webkit-transform-origin: bottom;
-          transform-origin: bottom;
+  -webkit-transform-origin: top;
+          transform-origin: top;
 }
 
 .ts-txt-wrap h1 {
@@ -496,6 +504,7 @@ main section#ts-bg-top #ts-lang {
 
 main section#ts-bg-top #ts-lang h2 {
   font-size: 1.6rem;
+  color: #f8f8f8;
 }
 
 main section#ts-bg-top #ts-hello {

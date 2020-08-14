@@ -195,6 +195,12 @@ a.ts-circle-center {
 	from { opacity: 0}
 	to {opacity: 1}
 }
+a.link {
+	color: rgb(255, 243, 204) !important;
+	&:hover {
+		text-decoration: none;
+	}
+}
 	// <notindex>
 main.ts-page {
 	width: 100%;
@@ -203,7 +209,6 @@ main.ts-page {
 	top: 0;
 	left: 0;
 	background: radial-gradient(234.64% 100% at 50% 100%, #381a70 0%, #1F1178 100%);
-
 }
 .ts-txt-wrap {
 	z-index: 3;
@@ -213,7 +218,7 @@ main.ts-page {
 	width: 80%;
 	max-width: 640px;
 	animation: .7s b forwards;
-	transform-origin: bottom;
+	transform-origin: top;
 	h1 {
 		font-size: 2.5rem;
 		padding: 0 0 25px 20px;
@@ -367,6 +372,7 @@ main {
 			top: 200px;
 			h2 {
 				font-size: 1.6rem;
+				color: $white;
 			}
 		}
 		

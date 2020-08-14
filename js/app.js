@@ -48,3 +48,7 @@ window.onload = () => {
 	})
 	
 }
+
+function removeHash() {
+	history.replaceState('', document.title, window.location.pathname)
+}
