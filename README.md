@@ -1,4 +1,4 @@
-# Personal Website beta-2.0
+# Personal Website beta-2.0.2
  
 Just a website that I will use as my portfolio
 
@@ -6,7 +6,7 @@ Just a website that I will use as my portfolio
 - HTML
 - CSS + Sass
 - Vanilla JavaScript
-- PHP (planned)
+- PHP
 
 ---
 
