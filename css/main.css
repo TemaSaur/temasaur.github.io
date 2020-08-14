@@ -125,6 +125,29 @@ a.ts-circle-center:hover {
   background: linear-gradient(180deg, #F8DEB8 0%, #7A7874 100%);
 }
 
+.fade-in {
+  -webkit-animation: .8s f forwards;
+          animation: .8s f forwards;
+}
+
+@-webkit-keyframes f {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes f {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 main.ts-page {
   width: 100%;
   min-height: 100vh;
@@ -141,11 +164,41 @@ main.ts-page {
   left: calc(50% - 640px);
   width: 80%;
   max-width: 640px;
+  -webkit-animation: .7s b forwards;
+          animation: .7s b forwards;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
 }
 
 .ts-txt-wrap h1 {
   font-size: 2.5rem;
   padding: 0 0 25px 20px;
+}
+
+@-webkit-keyframes b {
+  from {
+    -webkit-transform: rotateX(90deg);
+            transform: rotateX(90deg);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes b {
+  from {
+    -webkit-transform: rotateX(90deg);
+            transform: rotateX(90deg);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1;
+  }
 }
 
 .ts-dark {
@@ -177,6 +230,10 @@ main.ts-page {
   height: 120px;
   bottom: 0;
   left: 0;
+  -webkit-animation: .8s a forwards;
+          animation: .8s a forwards;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
 }
 
 .ts-footer-planet svg {
@@ -186,6 +243,32 @@ main.ts-page {
   position: absolute;
   bottom: 60px;
   left: calc(50% + 300px);
+}
+
+@-webkit-keyframes a {
+  from {
+    -webkit-transform: rotateX(-90deg) skewX(15deg);
+            transform: rotateX(-90deg) skewX(15deg);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes a {
+  from {
+    -webkit-transform: rotateX(-90deg) skewX(15deg);
+            transform: rotateX(-90deg) skewX(15deg);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1;
+  }
 }
 
 #ts-back {

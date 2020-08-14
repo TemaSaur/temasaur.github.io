@@ -102,6 +102,13 @@ a.ts-circle-center {
 .ts-planet-gray {
 	background: linear-gradient(180deg, #F8DEB8 0%, #7A7874 100%);
 }
+.fade-in {
+	animation: .8s f forwards;
+}
+@keyframes f {
+	from { opacity: 0}
+	to {opacity: 1}
+}
 	// <notindex>
 main.ts-page {
 	width: 100%;
@@ -119,11 +126,23 @@ main.ts-page {
 	left: calc(50% - 640px);
 	width: 80%;
 	max-width: 640px;
+	animation: .7s b forwards;
+	transform-origin: bottom;
 	h1 {
 		font-size: 2.5rem;
 		padding: 0 0 25px 20px;
 	}
 }
+@keyframes b {
+	from {
+		transform: rotateX(90deg);
+		opacity: 0;
+	} to {
+		transform: none;
+		opacity: 1;
+	}
+}
+
 .ts-dark {
 	z-index: 6;
 	padding: 20px;
@@ -150,6 +169,8 @@ main.ts-page {
 	height: 120px;
 	bottom: 0;
 	left: 0;
+	animation: .8s a forwards;
+	transform-origin: bottom;
 	
 	svg {
 		z-index: 3;
@@ -158,6 +179,16 @@ main.ts-page {
 		position: absolute;
 		bottom: 60px;
 		left: calc(50% + 300px);
+	}
+}
+@keyframes a {
+	from {
+		transform: rotateX(-90deg)
+		skewX(15deg);
+		opacity: 0;
+	} to {
+		transform: none;
+		opacity: 1;
 	}
 }
 
