@@ -55,16 +55,16 @@
 
 		<section id="ts-bg-bottom">
 			<div id="ts-nav">
-				<a href="about.html" id="ts-about" class="ts-circle-center ts-div-shadow ts-planet-orange js-cursor-hover">
+				<a href="about.php" id="ts-about" class="ts-circle-center ts-div-shadow ts-planet-orange js-cursor-hover">
 					<span id="thanks"></span>
 					<h3 class="ts-shadow">About me</h3>
 				</a>
 				<span class="ts-planet-blue ts-planet-medium ts-div-shadow ts-circle anim-1" id="planet-7"></span>
-				<a href="projects.html" id="ts-portfolio" class="ts-circle-center ts-div-shadow ts-planet-red js-cursor-hover">
+				<a href="projects.php" id="ts-portfolio" class="ts-circle-center ts-div-shadow ts-planet-red js-cursor-hover">
 					<h3 class="ts-shadow">Projects</h3>
 				</a>
 				<span class="ts-planet-gray ts-planet-small ts-div-shadow ts-circle anim-2" id="planet-8"></span>
-				<a href="contact.html" id="ts-contact" class="ts-circle-center ts-div-shadow ts-planet-blue js-cursor-hover">
+				<a href="contact.php" id="ts-contact" class="ts-circle-center ts-div-shadow ts-planet-blue js-cursor-hover">
 					<h3 class="ts-shadow">Contact me</h3>
 				</a>
 				<span class="ts-planet-gray ts-planet-small ts-div-shadow ts-circle anim-1" id="planet-9"></span>
