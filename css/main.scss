@@ -202,6 +202,53 @@ main.ts-page {
 		font-size: 1.6rem;
 	}
 }
+#about-footer-planet {
+	background: linear-gradient(180deg, #FEAF38 0%, #EEA02B 100%);
+}
+#projects-footer-planet {
+	background: linear-gradient(180deg, #FE5353 0%, #BA2E2E 100%);
+	svg {
+		top: 80px;
+		transform: translateY(-100%);
+	}
+}
+#contact-footer-planet {
+	background: linear-gradient(180deg, #17C5FD 0%, #13B2E2 100%);	
+}
+form#ts-email-form {
+	margin-top: 10px;
+	* {
+		font-family: "Gabriela", "Cambria", "Palatino", serif;
+		font-size: 1rem;
+		border: none;
+	}
+	label {
+		padding: 0px;
+	}
+	input {
+		width: 60%;
+		padding: 8px 10px;
+		margin: 5px 0 1rem;
+		background: $white;
+		outline: none;
+	}
+	textarea {
+		width: 100%;
+		padding: 8px 10px;
+		margin: 5px 0 1rem;
+		background: $white;
+		outline: none;
+	}
+	button {
+		padding: 15px 40px;
+		color: $white;
+		outline: none;
+		border: none;
+		&:active {
+			background: linear-gradient(180deg, #A50000 0%, #b93939 100%);
+		}
+	}
+}
 
 	// </notindex>
 // </static_classes>
