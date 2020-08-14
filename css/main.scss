@@ -2,6 +2,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	cursor: none;
 }
 
 // <const>
@@ -39,6 +40,91 @@ h1,h2,h3,h4,h5,h6 {
 	background-color: #551DCC;
 }
 // </scrollbar>
+// <cursor>
+#cursor {
+	z-index: 9999;
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	left: -100%;
+	transform: translate(-50%, -50%);
+
+	border-radius: 50%;
+	border: 2px solid $white;
+
+	pointer-events: none;
+	transition: .2s border;
+
+	&::before {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 2px;
+		height: 2px;
+		border-radius: 50%;
+		background: #ffffff;
+		//border: 1px solid #000000ff;
+		transform: translate(22px, 22px);
+	}
+	&::after {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		//transform: translate(-5px, -5px);
+		border-radius: 50%;
+		border: 8px solid #00000050;
+	}
+
+	&.mouseover {
+		animation: .4s ease-in-out 0s infinite alternate cursLoop;
+	}
+
+	&.expand {
+		animation: cursExpand .5s forwards;
+		border: 2px solid #e5e777;
+	}
+}
+
+@keyframes cursLoop {
+	0% {
+		transform:
+				translate(-50%, -50%)
+				scale(1);
+		opacity: 1;
+	} 100% {
+		transform:
+				translate(-50%, -50%)
+				scale(1.5);
+		opacity: .4;
+	}
+}
+
+@keyframes cursExpand {
+	0% {
+		transform:
+				translate(-50%, -50%)
+				scale(1);
+	} 50% {
+		transform:
+				translate(-50%, -50%)
+				scale(2.5);
+	} 66% {
+		transform:
+				translate(-50%, -50%)
+				scale(1);
+		opacity: 0;
+		border: 2px solid #51ffab;
+	} 100% {
+		transform:
+				translate(-50%, -50%)
+				scale(1);
+		border: 2px solid $white;
+		opacity: 1;
+	}
+}
+// </cursor>
 
 // <static_classes>
 .ts-hand {

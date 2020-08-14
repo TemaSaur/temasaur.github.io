@@ -1,4 +1,6 @@
 window.onload = () => {
+	const cursor = document.querySelector("#cursor");
+	const hover = document.querySelectorAll(".js-cursor-hover")
 	const block = 250, k = 50, url = window.location.href;
 
 	let height = document.body.offsetHeight;
@@ -20,5 +22,29 @@ window.onload = () => {
 		// try {getTextHeight(height)} catch {}
 	};
 
-	onmousemove = e => moveStars(e, k);
+	const sun = document.querySelector(".ts-sun");
+	if (sun) {
+		sun.onclick = () => {
+			setTimeout(() => {removeHash();}, 5)
+		}
+	}
+	
+	onmousemove = e => {
+		cursorMove(cursor, e)
+		moveStars(e, k);
+	};
+
+	document.onclick = () => {
+		cursorExpand(cursor)
+	}
+
+	hover.forEach(i => {
+		i.onmouseover = () => {
+			cursorChange(cursor);
+		}
+		i.onmouseout = () => {
+			cursorBack(cursor)
+		}
+	})
+	
 }
