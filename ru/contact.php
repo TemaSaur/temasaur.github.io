@@ -8,6 +8,7 @@
 		<div class="ts-txt-wrap">
 			<h1 class="ts-hand ts-shadow">Контакты</h1>
 			<div class="ts-dark">
+			<h2>Давайте работать вместе!</h2>
 				<p>Вы можете найти меня в соц. сетях:</p>
 				<p>vk.com/temasaur<br>
 				instagram.com/vakhrushevartemy</p>

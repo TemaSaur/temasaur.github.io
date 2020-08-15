@@ -12,13 +12,13 @@
 					As you already know my name is Artemy and I'm a developer.
 				</p>
 				<p>
-					It's been about two years since I started programming. My favourite languages to code are Python and Java, but I also know C++, HTML, CSS (+Sass), JavaScript (+jQuery, NodeJS), PHP.
+					It's been about two years since I started programming. My favourite languages to code are Python and Java, but I also know C++, C#, HTML, CSS (+Sass), JavaScript (+jQuery, NodeJS), PHP.
 				</p>
 				<p>
 					I love solving challenging problems so I've spend a lot of time designing algorithms and competing in Competitive Programming contests.
 				</p>
 				<p>
-					Right now my goals are to go to Uneversity and then to get a job as a software developer.
+					Right now my goals are to enter University and to get a job as a software engineer.
 				</p>
 			</div>
 		</div>

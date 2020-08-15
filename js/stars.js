@@ -39,7 +39,6 @@ updateStars = (width, height, block, k) => {
 
 moveStars = (e, k) => {
 	let x = e.clientX - window.innerWidth / 2;
-	// let x = e.clientX - document.body.offsetWidth / 2;
 	let y = e.clientY - window.innerHeight / 2;
 
 	starsdiv.style.transform = `translate(${x / k}px, ${y / k}px)`;

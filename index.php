@@ -32,7 +32,7 @@
 					Artemy Vakhrushev
 				</h1>
 				<h2 class="ts-shadow">
-					and i'm a self-taught developer
+					and i'm a self-taught programmer
 				</h2>
 			</div> <!-- /ts-hello -->
 

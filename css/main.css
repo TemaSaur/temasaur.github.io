@@ -292,7 +292,7 @@ main.ts-page {
   top: 100px;
   left: calc(50% - 640px);
   width: 80%;
-  max-width: 640px;
+  max-width: 700px;
   -webkit-animation: .7s b forwards;
           animation: .7s b forwards;
   -webkit-transform-origin: top;
@@ -457,6 +457,7 @@ form#ts-email-form input {
 
 form#ts-email-form textarea {
   width: 100%;
+  max-width: 100%;
   padding: 8px 10px;
   margin: 5px 0 1rem;
   background: #f8f8f8;
