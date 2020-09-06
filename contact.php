@@ -12,7 +12,7 @@
 				<p>vk.com/temasaur<br>
 				instagram.com/vakhrushevartemy</p>
 				<p>or you can email me:</p>
-				<form action="#" method="POST" id="ts-email-form">
+				<form action="includes/contact_form.php" method="POST" id="ts-email-form">
 					<label for="ts-name">Name:</label><br>
 					<input id="ts-name" name="name" type="text" placeholder="Will Smith"><br>
 

@@ -13,7 +13,7 @@
 				<p>vk.com/temasaur<br>
 				instagram.com/vakhrushevartemy</p>
 				<p>или можно мне написать здесь:</p>
-				<form action="#" method="POST" id="ts-email-form">
+				<form action="includes/contact_form.php" method="POST" id="ts-email-form">
 					<label for="ts-name">Имя:</label><br>
 					<input id="ts-name" name="name" type="text" placeholder="Уилл Смит"><br>
 
