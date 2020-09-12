@@ -11,9 +11,6 @@ html, body {
   font-size: 16px;
   color: #f8f8f8;
   scroll-behavior: smooth;
-}
-
-body {
   overflow-x: hidden;
 }
 
@@ -499,12 +496,28 @@ main section#ts-bg-top #ts-lang {
   z-index: 4;
   height: 120px;
   width: 120px;
-  left: calc(50% + 25rem);
+  left: calc(50% + 22rem);
   top: 200px;
 }
 
+@media (max-width: 800px) {
+  main section#ts-bg-top #ts-lang {
+    top: 120px;
+    left: calc(50% + 16rem);
+  }
+}
+
+@media (max-width: 600px) {
+  main section#ts-bg-top #ts-lang {
+    height: 100px;
+    width: 100px;
+    top: 120px;
+    left: calc(50% + 12rem);
+  }
+}
+
 main section#ts-bg-top #ts-lang h2 {
-  font-size: 1.6rem;
+  font-size: 22px;
   color: #f8f8f8;
 }
 
@@ -529,25 +542,55 @@ main section#ts-bg-top #ts-hello h1 {
   text-shadow: 0 0 20px #ffffff50 2px 4px 6px rgba(0, 0, 0, 0.35);
 }
 
+@media (max-width: 600px) {
+  main section#ts-bg-top #ts-hello h1 {
+    font-size: 5rem;
+  }
+  main section#ts-bg-top #ts-hello h2 {
+    font-size: 2rem;
+  }
+}
+
 main section#ts-bg-top a.ts-sun {
   z-index: 4;
   top: 100%;
   left: 50%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-transform: scale(0) rotate(180deg);
           transform: scale(0) rotate(180deg);
   -webkit-animation: animate_sun 0.8s cubic-bezier(0.07, 0.375, 0.22, 0.985) 0.4s forwards;
           animation: animate_sun 0.8s cubic-bezier(0.07, 0.375, 0.22, 0.985) 0.4s forwards;
-  width: 45vh;
-  height: 45vh;
+  width: 40vw;
+  max-width: 420px;
+  height: 40vw;
+  max-height: 420px;
   background: -webkit-gradient(linear, left top, left bottom, from(#EFFF8A), to(#F88585));
   background: linear-gradient(180deg, #EFFF8A 0%, #F88585 100%);
   -webkit-box-shadow: 0px 4px 147px #F6F7CBd0;
           box-shadow: 0px 4px 147px #F6F7CBd0;
 }
 
+@media (max-width: 800px) {
+  main section#ts-bg-top a.ts-sun {
+    top: calc(100% - 10vw);
+    width: 45vw;
+    height: 45vw;
+  }
+}
+
+@media (max-width: 600px) {
+  main section#ts-bg-top a.ts-sun {
+    width: 50vw;
+    height: 50vw;
+  }
+}
+
 main section#ts-bg-top a.ts-sun h3 {
-  -webkit-transform: translate(0, calc(-45vh / 4));
-          transform: translate(0, calc(-45vh / 4));
+  padding-top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
   font-size: 1.6rem;
   color: #E800A7;
   -webkit-transition: .2s transform;
@@ -556,7 +599,6 @@ main section#ts-bg-top a.ts-sun h3 {
 
 @supports ((background-clip: text) or (-webkit-background-clip: text)) and ((-webkit-text-fill-color: transparent) or (-webkit-text-fill-color: transparent)) {
   main section#ts-bg-top a.ts-sun h3 {
-    background: #E800A7;
     background: -webkit-gradient(linear, left top, right top, from(#E800A7), to(#0BA7FF));
     background: linear-gradient(90deg, #E800A7 0%, #0BA7FF 100%);
     background-clip: text;
@@ -591,19 +633,35 @@ main section#ts-bg-bottom #ts-nav a {
 }
 
 main section#ts-bg-bottom #ts-nav a h3 {
-  font-size: 1.35rem;
+  font-size: 19px;
 }
 
 main section#ts-bg-bottom #ts-nav #ts-about {
   width: 180px;
   height: 180px;
   top: 0;
-  left: calc(50% + 180px / 2);
+  left: calc(50% + 80px);
 }
 
 main section#ts-bg-bottom #ts-nav #ts-about #thanks {
   position: relative;
   bottom: 200px;
+}
+
+@media (max-width: 800px) {
+  main section#ts-bg-bottom #ts-nav #ts-about {
+    height: 150px;
+    width: 150px;
+    left: calc(50% + 100px);
+  }
+}
+
+@media (max-width: 500px) {
+  main section#ts-bg-bottom #ts-nav #ts-about {
+    height: 140px;
+    width: 140px;
+    left: calc(50% + 60px);
+  }
 }
 
 main section#ts-bg-bottom #ts-nav #ts-portfolio {
@@ -613,11 +671,49 @@ main section#ts-bg-bottom #ts-nav #ts-portfolio {
   left: calc(50% - 250px);
 }
 
+@media (max-width: 800px) {
+  main section#ts-bg-bottom #ts-nav #ts-portfolio {
+    height: 200px;
+    width: 200px;
+    left: calc(50% - 160px);
+  }
+}
+
+@media (max-width: 540px) {
+  main section#ts-bg-bottom #ts-nav #ts-portfolio {
+    height: 180px;
+    width: 180px;
+    left: calc(50% - 100px);
+  }
+}
+
 main section#ts-bg-bottom #ts-nav #ts-contact {
   width: 220px;
   height: 220px;
   top: 400px;
   left: calc(50% + 220px);
+}
+
+@media (max-width: 800px) {
+  main section#ts-bg-bottom #ts-nav #ts-contact {
+    height: 170px;
+    width: 170px;
+    left: calc(50% + 140px);
+  }
+}
+
+@media (max-width: 500px) {
+  main section#ts-bg-bottom #ts-nav #ts-contact {
+    height: 150px;
+    width: 150px;
+    left: calc(50% + 140px);
+  }
+}
+
+@media (max-width: 440px) {
+  main section#ts-bg-bottom #ts-nav #ts-contact {
+    left: calc(50% + 120px);
+  }
 }
 
 aside#ts-stars {
@@ -644,6 +740,10 @@ aside#ts-stars .ts-star {
           animation: .2s stars ease-out forwards;
 }
 
+#planets {
+  overflow: hidden;
+}
+
 #planet-0 {
   top: 600px;
   left: calc(50% - 27rem);
@@ -651,7 +751,20 @@ aside#ts-stars .ts-star {
 
 #planet-1 {
   bottom: 100px;
-  left: calc(50% + 320px);
+  left: calc(50% + 300px);
+}
+
+@media (max-width: 800px) {
+  #planet-1 {
+    left: calc(50% + 180px);
+  }
+}
+
+@media (max-width: 470px) {
+  #planet-1 {
+    bottom: 120px;
+    left: calc(50% + 120px);
+  }
 }
 
 #planet-2 {
@@ -661,7 +774,19 @@ aside#ts-stars .ts-star {
 
 #planet-3 {
   top: calc(100vh + 400px);
-  left: calc(50% + 20rem);
+  left: calc(50% + 17rem);
+}
+
+@media (max-width: 800px) {
+  #planet-3 {
+    left: calc(50% + 150px);
+  }
+}
+
+@media (max-width: 520px) {
+  #planet-3 {
+    left: calc(50% + 80px);
+  }
 }
 
 #planet-4 {
@@ -679,6 +804,12 @@ aside#ts-stars .ts-star {
   left: calc(50% + 820px);
 }
 
+@media (max-width: 1740px) {
+  #planet-6 {
+    display: none;
+  }
+}
+
 #planet-7 {
   left: calc(50% - 175px);
   top: 420px;
@@ -687,6 +818,12 @@ aside#ts-stars .ts-star {
 #planet-8 {
   left: calc(50% + 320px);
   top: 200px;
+}
+
+@media (max-width: 760px) {
+  #planet-8 {
+    display: none;
+  }
 }
 
 #planet-9 {
@@ -907,6 +1044,18 @@ aside#ts-stars .ts-star {
   }
   to {
     opacity: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  html, body {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 720px) {
+  html, body {
+    font-size: 12px;
   }
 }
 /*# sourceMappingURL=main.css.map */

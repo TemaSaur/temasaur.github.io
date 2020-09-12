@@ -1,7 +1,14 @@
 window.onload = () => {
-	const cursor = document.querySelector("#cursor");
+	
+	let cursor;
+	if (! mobile()) {
+		cursor = document.querySelector("#cursor");
+	} else {
+		cursor = null;
+	}
+
 	const hover = document.querySelectorAll(".js-cursor-hover")
-	const block = 250, k = 50, url = window.location.href;
+	const block = 200, k = 50, url = window.location.href;
 
 	let height = document.body.offsetHeight;
 	let width = document.body.offsetWidth;
@@ -30,25 +37,36 @@ window.onload = () => {
 	}
 	
 	onmousemove = e => {
-		cursorMove(cursor, e)
+		if (! mobile())
+			cursorMove(cursor, e)
 		moveStars(e, k);
 	};
+	
 
 	document.onclick = () => {
-		cursorExpand(cursor)
+		if (! mobile())
+			cursorExpand(cursor)
 	}
 
-	hover.forEach(i => {
-		i.onmouseover = () => {
-			cursorChange(cursor);
-		}
-		i.onmouseout = () => {
-			cursorBack(cursor)
-		}
-	})
+	if (! mobile()) {
+		hover.forEach(i => {
+			i.onmouseover = () => {
+				cursorChange(cursor);
+			}
+			i.onmouseout = () => {
+				cursorBack(cursor)
+			}
+		})
+	}
 	
 }
 
 function removeHash() {
 	history.replaceState('', document.title, window.location.pathname)
+}
+
+function mobile() {
+	let a = /Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)
+	if (a) {document.querySelector("#cursor").style.display = "none"}
+	return a;
 }

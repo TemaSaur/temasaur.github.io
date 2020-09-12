@@ -25,7 +25,7 @@
 					Later, I learned C++ and Java, began reading books on algorithms and data structures. At the same time, I took part in a few programming contests on <a href="https://codeforces.com" class="link">CodeForces</a>. I even tried gamedev on game engine Unity with C#, but lost interest very soon. Further "studying program" included raising my web-development skills and learning HTML5, CSS3 (+Sass), JavaScript (+jQuery, ReactJS, NodeJS), PHP.
 				</p>
 				<p>
-					Today, I never stop studying and developing. <a href="contact">I’m also searching for working opportunities</a>! My current goal is to get a job as a software engineer, gain experience and add some projects to the portfolio.
+					Today, I never stop studying and developing. <a href="contact" class="link">I’m also searching for working opportunities</a>! My current goal is to get a job as a software engineer, gain experience and add some projects to the portfolio.
 				</p>
 			</div>
 		</div>

@@ -15,10 +15,12 @@ html, body {
 	font-size: 16px;
 	color: $white;
 	scroll-behavior: smooth;
-}
-body {
 	overflow-x: hidden;
 }
+// body {
+// 	// position: absolute;
+// 	// overflow-x: hidden;
+// }
 h1,h2,h3,h4,h5,h6 {
 	font-weight: 400;
 }
@@ -165,16 +167,19 @@ a.ts-circle-center {
 	z-index: 3;
 	width: 50px;
 	height: 50px;
+	// position: absolute !important;
 }
 .ts-planet-medium {
 	z-index: 3;
 	width: 70px;
 	height: 70px;
+	// position: absolute !important;
 }
 .ts-planet-big {
 	z-index: 3;
 	width: 100px;
 	height: 100px;
+	// position: absolute !important;
 }
 .ts-planet-orange {
 	background: linear-gradient(180deg, #FFB039 0%, #C26520 100%);
@@ -369,10 +374,22 @@ main {
 			z-index: 4;
 			height: 120px;
 			width: 120px;
-			left: calc(50% + 25rem);
+			left: calc(50% + 22rem);
 			top: 200px;
+
+			@media (max-width: 800px) {
+				top: 120px;
+				left: calc(50% + 16rem);
+			}
+			@media (max-width: 600px) {
+				height: 100px;
+				width: 100px;
+				top: 120px;
+				left: calc(50% + 12rem);
+			}
+
 			h2 {
-				font-size: 1.6rem;
+				font-size: 22px;
 				color: $white;
 			}
 		}
@@ -394,30 +411,51 @@ main {
 				font-size: 6rem;
 				text-shadow: $shadow2 $shadow;
 			}
+
+			@media (max-width: 600px) {
+				h1 {
+					font-size: 5rem;
+				}
+				h2 {
+					font-size: 2rem;
+				}
+			}
 		}
 
 		a.ts-sun {
 			z-index: 4;
-			// $sun-size: 420px;
-			$sun-size: 45vh;
 			
 			top: 100%;
 			left: 50%;
+			align-items: flex-start;
 			
 			transform: scale(0) rotate(180deg);
 			animation: animate_sun .8s cubic-bezier(0.070, 0.375, 0.220, 0.985) .4s forwards;
 
-			width: $sun-size;
-			height: $sun-size;
+			width: 40vw;
+			max-width: 420px;
+			height: 40vw;
+			max-height: 420px;
+			@media (max-width: 800px) {
+				top: calc(100% - 10vw);
+				width: 45vw;
+				height: 45vw;
+			}
+			@media (max-width: 600px) {
+				width: 50vw;
+				height: 50vw;
+			}
+
 			background: linear-gradient(180deg, #EFFF8A 0%, #F88585 100%);
 			box-shadow: 0px 4px 147px #F6F7CBd0;
+			// padding-top: 25%;
 
 			h3 {
-				transform: translate(0, calc(-#{$sun-size} / 4));
+				padding-top: 50%;
+				transform: translate(0, -50%);
 				font-size: 1.6rem;
 
-				@supports ((background-clip: text) or (-webkit-background-clip: text)) and ((-webkit-text-fill-color: transparent) or (-webkit-text-fill-color: transparent)) {
-					background: #E800A7;
+				@supports (((background-clip: text) or (-webkit-background-clip: text)) and ((-webkit-text-fill-color: transparent) or (-webkit-text-fill-color: transparent))) {
 					background: linear-gradient(90deg, #E800A7 0%, #0BA7FF 100%);
 					background-clip: text;
 					-webkit-background-clip: text;
@@ -452,7 +490,7 @@ main {
 			width: 100%;
 
 			a h3 {
-				font-size: 1.35rem;
+				font-size: 19px;
 			}
 
 			#ts-about {
@@ -461,27 +499,60 @@ main {
 					bottom: 200px;
 				}
 				
-				$abt-size: 180px;
-				width: $abt-size;
-				height: $abt-size;				
+				width: 180px;
+				height: 180px;				
 				top: 0;
-				left: calc(50% + #{$abt-size} / 2);
+				left: calc(50% + 80px);
+
+				@media (max-width: 800px) {
+					height: 150px;
+					width: 150px;
+					left: calc(50% + 100px)
+				}
+				@media (max-width: 500px) {
+					height: 140px;
+					width: 140px;
+					left: calc(50% + 60px)
+				}
 			}
 
 			#ts-portfolio {
-				$port-size: 250px;
-				width: $port-size;
-				height: $port-size;
+				width: 250px;
+				height: 250px;
 				top: 200px;
-				left: calc(50% - #{$port-size});
+				left: calc(50% - 250px);
+
+				@media (max-width: 800px) {
+					height: 200px;
+					width: 200px;
+					left: calc(50% - 160px)
+				}
+				@media (max-width: 540px) {
+					height: 180px;
+					width: 180px;
+					left: calc(50% - 100px);
+				}
 			}
 
 			#ts-contact {
-				$cont-size: 220px;
-				width: $cont-size;
-				height: $cont-size;
+				width: 220px;
+				height: 220px;
 				top: 400px;
-				left: calc(50% + #{$cont-size});
+				left: calc(50% + 220px);
+
+				@media (max-width: 800px) {
+					height: 170px;
+					width: 170px;
+					left: calc(50% + 140px);
+				}
+				@media (max-width: 500px) {
+					height: 150px;
+					width: 150px;
+					left: calc(50% + 140px);
+				}
+				@media (max-width: 440px) {
+					left: calc(50% + 120px);
+				}
 			}
 		}
 	}
@@ -507,13 +578,27 @@ aside#ts-stars {
 		animation: .2s stars ease-out forwards;
 	}
 }
+#planets {
+	// position: absolute;
+	// top: 0;
+	// left: 0;
+	// width: 100vw;
+	overflow: hidden;
+}
 #planet-0 {
 	top: 600px;
 	left: calc(50% - 27rem);
 }
 #planet-1 {
 	bottom: 100px;
-	left: calc(50% + 320px);
+	left: calc(50% + 300px);
+	@media (max-width: 800px) {
+		left: calc(50% + 180px)
+	}
+	@media (max-width: 470px) {
+		bottom: 120px;
+		left: calc(50% + 120px)
+	}
 }
 #planet-2 {
 	top: 120px;
@@ -521,7 +606,13 @@ aside#ts-stars {
 }
 #planet-3 {
 	top: calc(100vh + 400px);
-	left: calc(50% + 20rem);
+	left: calc(50% + 17rem);
+	@media (max-width: 800px) {
+		left: calc(50% + 150px)
+	}
+	@media (max-width: 520px) {
+		left: calc(50% + 80px)
+	}
 }
 #planet-4 {
 	top: calc(100vh + 525px);
@@ -534,6 +625,9 @@ aside#ts-stars {
 #planet-6 {
 	top: 215vh;
 	left: calc(50% + 820px);
+	@media (max-width: 1740px) {
+		display: none;
+	}
 }
 #planet-7 {
 	left: calc(50% - 175px);
@@ -542,6 +636,9 @@ aside#ts-stars {
 #planet-8 {
 	left: calc(50% + 320px);
 	top: 200px;
+	@media (max-width: 760px) {
+		display: none
+	}
 }
 #planet-9 {
 	top: 69px;
@@ -643,5 +740,17 @@ aside#ts-stars {
 		opacity: 0%;
 	} to {
 		opacity: 100%;
+	}
+}
+
+
+@media (max-width: 1000px) {
+	html, body {
+		font-size: 14px;
+	}
+}
+@media (max-width: 720px) {
+	html, body {
+		font-size: 12px;
 	}
 }
