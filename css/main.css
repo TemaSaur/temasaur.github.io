@@ -500,6 +500,11 @@ main section#ts-bg-top #ts-lang {
   top: 200px;
 }
 
+main section#ts-bg-top #ts-lang h2 {
+  font-size: 22px;
+  color: #f8f8f8;
+}
+
 @media (max-width: 800px) {
   main section#ts-bg-top #ts-lang {
     top: 120px;
@@ -514,11 +519,9 @@ main section#ts-bg-top #ts-lang {
     top: 120px;
     left: calc(50% + 12rem);
   }
-}
-
-main section#ts-bg-top #ts-lang h2 {
-  font-size: 22px;
-  color: #f8f8f8;
+  main section#ts-bg-top #ts-lang h2 {
+    font-size: 10px;
+  }
 }
 
 main section#ts-bg-top #ts-hello {
