@@ -544,7 +544,7 @@ main section#ts-bg-top #ts-hello h1 {
 
 @media (max-width: 600px) {
   main section#ts-bg-top #ts-hello h1 {
-    font-size: 5rem;
+    font-size: 4.98rem;
   }
   main section#ts-bg-top #ts-hello h2 {
     font-size: 2rem;
