@@ -21,7 +21,6 @@
 					<h2>Консольный симулятор детской игры "Козел"</h2>
 					<div class="ts-stats">
 
-
 						<a href="https://github.com/TemaSaur/kozel_game" class="link">GitHub</a>
 
 						<!-- GITHUB -->
@@ -34,7 +33,7 @@
 						Козел - это соревновательная игра, подобная футболу, в которой нужно попасть в стену мячем за определенное количество ударов (более подробное описание на английском на GitHub'е).
 					</p>
 				</div>
-				<div class="ts-project">
+				<div id="dna" class="ts-project">
 					<h2>Сайт для школьного проекта</h2>
 					<div class="ts-stats">
 
@@ -50,7 +49,7 @@
 					</p>
 				</div>
 				<div class="ts-project">
-					<h2>Первый сайт-портфолио</h2>
+					<h2>Сайт-портфолио v1.0</h2>
 					<div class="ts-stats">
 						<!-- GITHUB -->
 						<div>
