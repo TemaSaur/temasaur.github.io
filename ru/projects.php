@@ -17,44 +17,51 @@
 				<p>
 					*но кое-что тут все-таки есть*
 				</p>
-				<div>
+				<div id="kozel" class="ts-project">
 					<h2>Консольный симулятор детской игры "Козел"</h2>
 					<div class="ts-stats">
+
+
+						<a href="https://github.com/TemaSaur/kozel_game" class="link">GitHub</a>
+
 						<!-- GITHUB -->
 						<div class="ts-techs">
-							Проект использует язык Python
+							Python	
 						</div>
 					</div>
+					<img src="../img/kozel.png" alt="Демонстрация симулятора">
 					<p>
-						описание игры
+						Козел - это соревновательная игра, подобная футболу, в которой нужно попасть в стену мячем за определенное количество ударов (более подробное описание на английском на GitHub'е).
 					</p>
 				</div>
-				<div>
+				<div class="ts-project">
 					<h2>Сайт для школьного проекта</h2>
 					<div class="ts-stats">
+
+						<a href="http://c95273yi.beget.tech/vard/index.html" class="link">Ссылка</a>
 						<!-- GITHUB -->
 						<div class="ts-techs">
-							Проект использует язык HTML4
+							HTML4
 						</div>
 					</div>
+					<img src="../img/dna.png" alt="">
 					<p>
 						Сайт работает на технологии frameset (устаревшей в наши дни), стили и разметка применены через атрибуты HTML.
 					</p>
 				</div>
-				<div>
+				<div class="ts-project">
 					<h2>Первый сайт-портфолио</h2>
 					<div class="ts-stats">
 						<!-- GITHUB -->
 						<div>
-							<a href="http://c95273yi.beget.tech/" class="link">ауф</a>
+							<a href="http://c95273yi.beget.tech/" class="link">Ссылка</a>
 						</div>
 						<div class="ts-techs">
-							Проект использует язык HTML (стандарт HTML5), CSS3, jQuery.
+							HTML5, CSS3, jQuery.
 						</div>
+						<img src="../img/first.png" alt="">
+						<p>Первая попытка создания собственного дизайна и воплощение его в жизнь соответственно.</p>
 					</div>
-					<p>
-						Сайт работает на жопе у меня.
-					</p>
 				</div>
 			</div>
 		</div>

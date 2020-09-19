@@ -224,6 +224,7 @@ main.ts-page {
 	max-width: 800px;
 	animation: .7s b forwards;
 	transform-origin: top;
+	margin-bottom: 15px;
 	h1 {
 		font-size: 2.5rem;
 		padding: 0 0 25px 20px;
@@ -251,13 +252,13 @@ main.ts-page {
 .ts-dark {
 	z-index: 6;
 	padding: 20px;
-	background: #313874d8;
+	background: #2b2c68d8;
 
-	@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-		backdrop-filter: blur(10px);
-		-webkit-backdrop-filter: blur(10px);
-		background: #2c326680;
-	}
+	// @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+	// 	backdrop-filter: blur(10px);
+	// 	-webkit-backdrop-filter: blur(10px);
+	// 	background: #2c326680;
+	// }
 
 	box-shadow: $shadow;
 	p {
@@ -266,6 +267,21 @@ main.ts-page {
 		padding: 6px 0;
 	}
 }
+.ts-project {
+	margin-top: 15px;
+	border-bottom: 2px solid $white;
+	.link {
+		font-size: 1.2rem;
+	}
+	h2 {
+		padding-bottom: 10px;
+	}
+	img {
+		width: 80%;
+		max-width: 360px;
+	}
+}
+
 .ts-footer-planet {
 	z-index: 2;
 	// position: relative;
