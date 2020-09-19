@@ -10,7 +10,6 @@ setPlanetPosition = (height, url) => {
 	if (txtBlock.clientHeight + 100 > height) {
 		// block too big
 		
-		console.log('bad');
 		footer.style.position = "relative";
 		return
 	}

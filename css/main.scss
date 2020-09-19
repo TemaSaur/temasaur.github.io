@@ -232,7 +232,6 @@ main.ts-page {
 
 	@media (max-width: 1440px) {
 		left: 40px;
-		width: 80%;
 	}
 	@media (max-width: 1040px) {
 		width: calc(100% - 80px);
@@ -300,9 +299,11 @@ main.ts-page {
 		position: absolute;
 		bottom: 60px;
 		left: calc(50% + 300px);
+		@media (max-width: 1440px) {
+			left: unset;
+			right: 20px;
+		}
 		@media (max-width: 1300px) {
-			left: auto;
-			right: -20px;
 			height: 70vh;
 		}
 		@media (max-width: 1040px) {
@@ -734,6 +735,9 @@ aside#ts-stars {
 #planet-10 {
 	top: calc(100vh - 300px);
 	left: calc(50% + 200px);
+	@media (max-width: 800px) {
+		display: none;
+	}
 }
 
 .anim-0 {
