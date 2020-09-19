@@ -383,15 +383,20 @@ main {
 			}
 
 			@media (max-width: 800px) {
+				height: 100px;
+				width: 100px;
 				top: 120px;
 				left: calc(50% + 16rem);
 			}
 			@media (max-width: 600px) {
-				height: 100px;
-				width: 100px;
+				height: 80px;
+				width: 80px;
 				top: 120px;
 				left: calc(50% + 12rem);
-				h2 {font-size: 10px;}
+				h2 {font-size: 18px;}
+			}
+			@media (max-width: 420px) {
+				left: calc(50% + 9rem);
 			}
 		}
 		
@@ -414,11 +419,21 @@ main {
 			}
 
 			@media (max-width: 600px) {
+				top: 28vh;
 				h1 {
-					font-size: 4.98rem;
+					font-size: 5rem;
 				}
 				h2 {
 					font-size: 2rem;
+				}
+			}
+			@media (max-width: 475px) {
+				top: 30vh;
+				h1 {
+					font-size: 4.4rem;
+				}
+				h2 {
+					font-size: 1.6rem;
 				}
 			}
 		}
@@ -445,6 +460,10 @@ main {
 			@media (max-width: 600px) {
 				width: 50vw;
 				height: 50vw;
+			}
+			@media (max-width: 420px) {
+				width: 60vw;
+				height: 60vw;
 			}
 
 			background: linear-gradient(180deg, #EFFF8A 0%, #F88585 100%);
@@ -515,6 +534,10 @@ main {
 					width: 140px;
 					left: calc(50% + 60px)
 				}
+				@media (max-width: 440px) {
+					height: 120px;
+					width: 120px;
+				}
 			}
 
 			#ts-portfolio {
@@ -533,6 +556,11 @@ main {
 					width: 180px;
 					left: calc(50% - 100px);
 				}
+				@media (max-width: 440px) {
+					height: 140px;
+					width: 140px;
+					left: calc(50% - 80px);
+				}
 			}
 
 			#ts-contact {
@@ -549,10 +577,11 @@ main {
 				@media (max-width: 500px) {
 					height: 150px;
 					width: 150px;
-					left: calc(50% + 140px);
 				}
 				@media (max-width: 440px) {
-					left: calc(50% + 120px);
+					height: 140px;
+					width: 140px;
+					left: calc(50% + 100px);
 				}
 			}
 		}
@@ -580,15 +609,14 @@ aside#ts-stars {
 	}
 }
 #planets {
-	// position: absolute;
-	// top: 0;
-	// left: 0;
-	// width: 100vw;
 	overflow: hidden;
 }
 #planet-0 {
 	top: 600px;
 	left: calc(50% - 27rem);
+	@media (max-width: 600px) {
+		left: calc(50% - 20rem);
+	}
 }
 #planet-1 {
 	bottom: 100px;
@@ -596,9 +624,9 @@ aside#ts-stars {
 	@media (max-width: 800px) {
 		left: calc(50% + 180px)
 	}
-	@media (max-width: 470px) {
+	@media (max-width: 475px) {
 		bottom: 120px;
-		left: calc(50% + 120px)
+		left: calc(50% + 110px)
 	}
 }
 #planet-2 {
@@ -613,6 +641,11 @@ aside#ts-stars {
 	}
 	@media (max-width: 520px) {
 		left: calc(50% + 80px)
+	}
+	@media (max-width: 420px) {
+		width: 80px;
+		height: 80px;
+		left: calc(50% + 40px);
 	}
 }
 #planet-4 {
@@ -753,5 +786,10 @@ aside#ts-stars {
 @media (max-width: 720px) {
 	html, body {
 		font-size: 12px;
+	}
+}
+@media (max-width: 420px) {
+	html, body {
+		font-size: 11px;
 	}
 }

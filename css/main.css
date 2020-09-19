@@ -507,6 +507,8 @@ main section#ts-bg-top #ts-lang h2 {
 
 @media (max-width: 800px) {
   main section#ts-bg-top #ts-lang {
+    height: 100px;
+    width: 100px;
     top: 120px;
     left: calc(50% + 16rem);
   }
@@ -514,13 +516,19 @@ main section#ts-bg-top #ts-lang h2 {
 
 @media (max-width: 600px) {
   main section#ts-bg-top #ts-lang {
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     top: 120px;
     left: calc(50% + 12rem);
   }
   main section#ts-bg-top #ts-lang h2 {
-    font-size: 10px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 420px) {
+  main section#ts-bg-top #ts-lang {
+    left: calc(50% + 9rem);
   }
 }
 
@@ -546,11 +554,26 @@ main section#ts-bg-top #ts-hello h1 {
 }
 
 @media (max-width: 600px) {
+  main section#ts-bg-top #ts-hello {
+    top: 28vh;
+  }
   main section#ts-bg-top #ts-hello h1 {
-    font-size: 4.98rem;
+    font-size: 5rem;
   }
   main section#ts-bg-top #ts-hello h2 {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 475px) {
+  main section#ts-bg-top #ts-hello {
+    top: 30vh;
+  }
+  main section#ts-bg-top #ts-hello h1 {
+    font-size: 4.4rem;
+  }
+  main section#ts-bg-top #ts-hello h2 {
+    font-size: 1.6rem;
   }
 }
 
@@ -587,6 +610,13 @@ main section#ts-bg-top a.ts-sun {
   main section#ts-bg-top a.ts-sun {
     width: 50vw;
     height: 50vw;
+  }
+}
+
+@media (max-width: 420px) {
+  main section#ts-bg-top a.ts-sun {
+    width: 60vw;
+    height: 60vw;
   }
 }
 
@@ -667,6 +697,13 @@ main section#ts-bg-bottom #ts-nav #ts-about #thanks {
   }
 }
 
+@media (max-width: 440px) {
+  main section#ts-bg-bottom #ts-nav #ts-about {
+    height: 120px;
+    width: 120px;
+  }
+}
+
 main section#ts-bg-bottom #ts-nav #ts-portfolio {
   width: 250px;
   height: 250px;
@@ -690,6 +727,14 @@ main section#ts-bg-bottom #ts-nav #ts-portfolio {
   }
 }
 
+@media (max-width: 440px) {
+  main section#ts-bg-bottom #ts-nav #ts-portfolio {
+    height: 140px;
+    width: 140px;
+    left: calc(50% - 80px);
+  }
+}
+
 main section#ts-bg-bottom #ts-nav #ts-contact {
   width: 220px;
   height: 220px;
@@ -709,13 +754,14 @@ main section#ts-bg-bottom #ts-nav #ts-contact {
   main section#ts-bg-bottom #ts-nav #ts-contact {
     height: 150px;
     width: 150px;
-    left: calc(50% + 140px);
   }
 }
 
 @media (max-width: 440px) {
   main section#ts-bg-bottom #ts-nav #ts-contact {
-    left: calc(50% + 120px);
+    height: 140px;
+    width: 140px;
+    left: calc(50% + 100px);
   }
 }
 
@@ -752,6 +798,12 @@ aside#ts-stars .ts-star {
   left: calc(50% - 27rem);
 }
 
+@media (max-width: 600px) {
+  #planet-0 {
+    left: calc(50% - 20rem);
+  }
+}
+
 #planet-1 {
   bottom: 100px;
   left: calc(50% + 300px);
@@ -763,10 +815,10 @@ aside#ts-stars .ts-star {
   }
 }
 
-@media (max-width: 470px) {
+@media (max-width: 475px) {
   #planet-1 {
     bottom: 120px;
-    left: calc(50% + 120px);
+    left: calc(50% + 110px);
   }
 }
 
@@ -789,6 +841,14 @@ aside#ts-stars .ts-star {
 @media (max-width: 520px) {
   #planet-3 {
     left: calc(50% + 80px);
+  }
+}
+
+@media (max-width: 420px) {
+  #planet-3 {
+    width: 80px;
+    height: 80px;
+    left: calc(50% + 40px);
   }
 }
 
@@ -1059,6 +1119,12 @@ aside#ts-stars .ts-star {
 @media (max-width: 720px) {
   html, body {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 420px) {
+  html, body {
+    font-size: 11px;
   }
 }
 /*# sourceMappingURL=main.css.map */
