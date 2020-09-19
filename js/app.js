@@ -18,6 +18,7 @@ window.onload = () => {
 	setPlanetPosition(height, url);
 
 	addStars(width, height, block, k);
+	setPlanetPosition(height, url);
 
 	window.onresize = () => {
 		updateStars(width, height, block, k);
@@ -25,7 +26,6 @@ window.onload = () => {
 		height = document.body.offsetHeight;
 		width = document.body.offsetWidth;
 		
-		setPlanetPosition(height, url);
 		// try {getTextHeight(height)} catch {}
 	};
 

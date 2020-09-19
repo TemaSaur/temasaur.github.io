@@ -334,19 +334,16 @@ main.ts-page {
 	@media (max-width: 800px) {
 		height: 100px;
 		width: 100px;
-		// top: 120px;
-		// left: calc(50% + 16rem);
 	}
 	@media (max-width: 600px) {
 		height: 80px;
 		width: 80px;
-		// top: 120px;
-		// left: calc(50% + 12rem);
 		h2 {font-size: 18px;}
 	}
-	// @media (max-width: 420px) {
-	// 	left: calc(50% + 9rem);
-	// }
+	@media (max-width: 540px) {
+		left: unset;
+		right: 1rem;
+	}
 }
 #about-footer-planet {
 	background: linear-gradient(180deg, #FEAF38 0%, #EEA02B 100%);
