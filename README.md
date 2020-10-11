@@ -23,4 +23,4 @@ website works on two languages, english and russian.
 
 ---
 
-###### *website uses graphic images from [unDraw](https://undraw.co/)*
+###### *website uses graphic images from [unDraw](https://undraw.co/), hosting [justhost.ru](https://justhost.ru/)*
