@@ -623,11 +623,13 @@ main {
 				@media (max-width: 800px) {
 					height: 200px;
 					width: 200px;
-					left: calc(50% - 160px)
+					top: 170px;
+					left: calc(50% - 160px);
 				}
 				@media (max-width: 540px) {
 					height: 180px;
 					width: 180px;
+					top: 120px;
 					left: calc(50% - 100px);
 				}
 				@media (max-width: 440px) {
@@ -646,7 +648,11 @@ main {
 				@media (max-width: 800px) {
 					height: 170px;
 					width: 170px;
+					top: 360px;
 					left: calc(50% + 140px);
+				}
+				@media (max-width: 540px) {
+					top: 300px;
 				}
 				@media (max-width: 500px) {
 					height: 150px;

@@ -817,6 +817,7 @@ main section#ts-bg-bottom #ts-nav #ts-portfolio {
   main section#ts-bg-bottom #ts-nav #ts-portfolio {
     height: 200px;
     width: 200px;
+    top: 170px;
     left: calc(50% - 160px);
   }
 }
@@ -825,6 +826,7 @@ main section#ts-bg-bottom #ts-nav #ts-portfolio {
   main section#ts-bg-bottom #ts-nav #ts-portfolio {
     height: 180px;
     width: 180px;
+    top: 120px;
     left: calc(50% - 100px);
   }
 }
@@ -848,7 +850,14 @@ main section#ts-bg-bottom #ts-nav #ts-contact {
   main section#ts-bg-bottom #ts-nav #ts-contact {
     height: 170px;
     width: 170px;
+    top: 360px;
     left: calc(50% + 140px);
+  }
+}
+
+@media (max-width: 540px) {
+  main section#ts-bg-bottom #ts-nav #ts-contact {
+    top: 300px;
   }
 }
 
