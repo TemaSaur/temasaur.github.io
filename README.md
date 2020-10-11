@@ -1,6 +1,6 @@
-# Personal Website beta-2.0.2
+# Personal Website 2.0
  
-Just a website that I will use as my portfolio
+Just a website
 
 ### Technologies used
 - HTML
