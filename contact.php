@@ -8,16 +8,37 @@
 		<div class="ts-txt-wrap">
 			<h1 class="ts-hand ts-shadow">Concact me</h1>
 			<div class="ts-dark">
-				<p>You can find me in my social media accounts at:</p>
-				<p>vk.com/temasaur<br>
-				instagram.com/vakhrushevartemy</p>
+				<h2>Let's work together!</h2>
+				<p>Here are some useful links:</p>
+				<ul class="ts-socials ts-box-shadow">
+					<li>
+						<a href="https://github.com/temasaur/" class="link">
+							<i class="fab fa-github"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://vk.com/id166141066/" class="link">
+							<i class="fab fa-vk"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://instagram.com/vakhrushevartemiy/" class="link">
+							<i class="fab fa-instagram"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.facebook.com/temasaur/" class="link">
+							<i class="fab fa-facebook"></i>
+						</a>
+					</li>
+				</ul>
 				<p>or you can email me:</p>
 				<form action="includes/contact_form.php" method="POST" id="ts-email-form">
 					<label for="ts-name">Name:</label><br>
 					<input id="ts-name" name="name" type="text" placeholder="Will Smith"><br>
 
 					<label for="ts-email">Email:</label><br>
-					<input id="ts-email" name="e-mail" type="email" placeholder="willsmith@temasaur.com"><br>
+					<input id="ts-email" name="e-mail" type="email" placeholder="willsmith@temasaur.dev"><br>
 
 					<label for="ts-subject">Subject:</label><br>
 					<input id="ts-subject" name="subject" type="text" placeholder="This is the subject"><br>
