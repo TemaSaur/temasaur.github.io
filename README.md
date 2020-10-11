@@ -15,7 +15,7 @@ Just a website
 
 ### useless info
 
-the name TemaSaur is my alias, which consists of two parts, Tema (which is my favorite variation of my name) and Saur (the ending of dino\[saur\]), which is actally presented in the logo (favicon).
+the name TemaSaur is my alias, which consists of two parts, Tema (which is my favorite variation of my name) and Saur (the ending of dino\[saur\]), which is actally presented in the logo (favicon) and pfp (kinda ugly saur).
 
 there are three pages on the website (excluding the main page), "about me" page, "projects" page, "contact" page with an email form.
 
