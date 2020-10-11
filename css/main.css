@@ -727,7 +727,7 @@ main section#ts-bg-top a.ts-sun h3 {
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
   font-size: 1.6rem;
-  color: #E800A7;
+  color: #0BA7FF;
   -webkit-transition: .2s transform;
   transition: .2s transform;
 }
