@@ -7,7 +7,7 @@ window.onload = () => {
 		cursor = null;
 	}
 
-	const hover = document.querySelectorAll(".js-cursor-hover, .link");
+	const hover = document.querySelectorAll(".js-cursor-hover, .link, .ts-git");
 	const block = 200, k = 50, url = window.location.href;
 
 	let height = document.body.offsetHeight;
