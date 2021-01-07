@@ -200,7 +200,7 @@ a.ts-circle-center {
 	from { opacity: 0}
 	to {opacity: 1}
 }
-a.link {
+a.link, .ts-git a {
 	color: rgb(255, 243, 204) !important;
 	&:hover {
 		text-decoration: none;
@@ -291,16 +291,38 @@ main.ts-page {
 }
 .ts-project {
 	margin-top: 15px;
-	border-bottom: 2px solid $white;
-	.link {
-		font-size: 1.2rem;
-	}
+	border-bottom: 2px solid #ffffff60;
+	
 	h2 {
 		padding-bottom: 10px;
 	}
-	img {
-		width: 80%;
-		max-width: 360px;
+	
+	.ts-techs {
+		padding-bottom: .5rem;
+		color: #ffffffd0;
+	}
+
+	.ts-project-link {
+		padding: .5rem 0;
+		img {
+			box-shadow: $shadow;
+		}
+		p, img {
+			font-size: 1.2rem;
+			display: block;
+			width: 80%;
+			max-width: 420px;
+		}
+	}
+
+	.ts-git {
+		font-size: 1rem;
+		padding-bottom: 1rem;
+		font-size: 1.2rem;
+	}
+	.no-git {
+		color: #ffffffd0;
+		font-size: 1rem;
 	}
 }
 

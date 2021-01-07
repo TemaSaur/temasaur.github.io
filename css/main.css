@@ -266,11 +266,11 @@ a.ts-circle-center:hover {
   }
 }
 
-a.link {
+a.link, .ts-git a {
   color: #fff3cc !important;
 }
 
-a.link:hover {
+a.link:hover, .ts-git a:hover {
   text-decoration: none;
 }
 
@@ -385,20 +385,43 @@ main.ts-page {
 
 .ts-project {
   margin-top: 15px;
-  border-bottom: 2px solid #f8f8f8;
-}
-
-.ts-project .link {
-  font-size: 1.2rem;
+  border-bottom: 2px solid #ffffff60;
 }
 
 .ts-project h2 {
   padding-bottom: 10px;
 }
 
-.ts-project img {
+.ts-project .ts-techs {
+  padding-bottom: .5rem;
+  color: #ffffffd0;
+}
+
+.ts-project .ts-project-link {
+  padding: .5rem 0;
+}
+
+.ts-project .ts-project-link img {
+  -webkit-box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.35);
+          box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.35);
+}
+
+.ts-project .ts-project-link p, .ts-project .ts-project-link img {
+  font-size: 1.2rem;
+  display: block;
   width: 80%;
-  max-width: 360px;
+  max-width: 420px;
+}
+
+.ts-project .ts-git {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.ts-project .no-git {
+  color: #ffffffd0;
+  font-size: 1rem;
 }
 
 .ts-footer-planet {
