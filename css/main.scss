@@ -200,11 +200,20 @@ a.ts-circle-center {
 	from { opacity: 0}
 	to {opacity: 1}
 }
-a.link, .ts-git a {
+a.link, a.ts-git {
 	color: rgb(255, 243, 204) !important;
 	&:hover {
 		text-decoration: none;
 	}
+}
+
+.ts-git {
+	color: rgb(255, 243, 204) !important;
+	&:hover {
+		text-decoration: none;
+	}
+	display: block;
+	width: 100%;
 }
 	// <notindex>
 main.ts-page {
@@ -281,6 +290,8 @@ main.ts-page {
 	// 	-webkit-backdrop-filter: blur(10px);
 	// 	background: #2c326680;
 	// }
+	backdrop-filter: blur(10px);
+	// background: #2c326620;
 
 	box-shadow: $shadow;
 	p {
@@ -308,7 +319,7 @@ main.ts-page {
 			box-shadow: $shadow;
 		}
 		p, img {
-			font-size: 1.2rem;
+			font-size: 1.3rem;
 			display: block;
 			width: 80%;
 			max-width: 420px;
@@ -316,12 +327,11 @@ main.ts-page {
 	}
 
 	.ts-git {
-		font-size: 1rem;
-		padding-bottom: 1rem;
-		font-size: 1.2rem;
+		padding-bottom: 1em;
+		font-size: 1.3rem;
 	}
 	.no-git {
-		color: #ffffffd0;
+		color: #ffffffd0 !important;
 		font-size: 1rem;
 	}
 }

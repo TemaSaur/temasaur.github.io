@@ -19,6 +19,61 @@
 				<!-- THE PROJECTS -->
 
 				<div class="ts-project">
+					<h2>Emojiboard;)</h2>
+					<div class="ts-techs">
+						Python (PyQt5)
+					</div>
+					
+					<div class="ts-project-link">
+						<img src="./img/eb.png" alt="">
+					</div>
+
+					<p>
+						<em>The problem</em>: sometimes it's hard to use emojis on PC if you don't have a native solution for your OS.
+						You have to google the thing, go to some website, then copy it and then paste it where you want it to be.
+					</p>
+					<p>
+						So I have built an on-screen keyboard that uses a library of emojis and displays all of them for you.
+						You just have to find the right one and it will automatically be pasted in the active window.
+					</p>
+					<p>
+						The app uses PyQt5 for UI and <b>mostly</b> cross-platform libraries for the functionality.
+						<em>At the moment it doesn't display ALL of the emojis and doesn't work on Linux but it is in development.
+						It's also planned to implement search and favourites.</em>
+					</p>
+
+					<a class="ts-git" href="https://github.com/TemaSaur/EmojiBoard/">
+						GitHub
+					</a>
+				</div>
+
+				<!---->
+
+				<div class="ts-project">
+					<h2>Digital nonsense</h2>
+					<div class="ts-techs">
+						HTML5, CSS3, JavaScript[, JSON]
+					</div>
+					
+					<div class="ts-project-link">
+						<a href="https://digital-nonsense.netlify.app/" class="link">
+							<p>Link</p>
+							<img src="./img/dn.png" alt="">
+						</a>
+					</div>
+
+					<p>
+						First attempt on making my own design and its implementation with code.
+					</p>
+
+					<a class="ts-git" href="https://github.com/TemaSaur/digital-nonsense/">
+						GitHub
+					</a>
+				</div>
+
+				<!---->
+
+				<div class="ts-project">
 					<h2>Website-Portfolio v1.0</h2>
 					<div class="ts-techs">
 						HTML5, CSS3, jQuery
@@ -35,12 +90,12 @@
 						First attempt on making my own design and its implementation with code.
 					</p>
 
-					<div class="ts-git">
-						<a href="https://github.com/TemaSaur/portfolio-0.1/">
-							GitHub
-						</a>
-					</div>
+					<a class="ts-git" href="https://github.com/TemaSaur/portfolio-0.1/">
+						GitHub
+					</a>
 				</div>
+
+				<!---->
 
 				<div id="kozel" class="ts-project">
 					<h2>A Console Simulator of a Children’s Game called "Kozel"</h2>
@@ -55,11 +110,17 @@
 					<p>
 						Kozel is a soccer-like competitive game in which you have to hit the wall with the ball in a certain number of kicks (more in depth on the GitHub repo).
 					</p>
+					<p>
+						You won't find anything mind-blowing in the repo.
+						As a lot of the smart coders say that it's best to learn programming with projects. For me, after the <em>hello world</em> I chose to build some kind of simulator of a game I liked as a kid with loops and random events.
+					</p>
 
-					<div class="ts-git">
-						<a href="https://github.com/TemaSaur/kozel_game">GitHub</a>
-					</div>
+					<a class="ts-git" href="https://github.com/TemaSaur/kozel_game">
+						GitHub
+					</a>
 				</div>
+
+				<!---->
 
 				<div id="dna" class="ts-project">
 					<h2>Website for a school project</h2>
@@ -78,9 +139,7 @@
 						The website works on frameset (outdated part of HTML4), all styles made with HTML attributes only.
 					</p>
 
-					<div class="ts-git">
-						<span class="no-git">[no github link]</span>
-					</div>
+					<span class="no-git ts-git">[no github link]</span>
 				</div>
 				
 			</div>
