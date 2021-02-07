@@ -9,12 +9,8 @@
 			<h1 class="ts-hand ts-shadow">Projects</h1>
 			<div class="ts-dark">
 				<p>
-					At the moment I have a number of unfinished projects, that I I don’t find it interesting to post online.
+					It would be cool if we could  <a href="contact" class="link">work together</a> and add something new and cool to this page!
 				</p>
-				<p>
-					Maybe with <a href="contact" class="link">your help</a> I'll be able to put something new and cool to this page!
-				</p>
-				<p>*but there's still something you can look at*</p>
 
 				<!-- THE PROJECTS -->
 
