@@ -63,7 +63,14 @@
 					</div>
 
 					<p>
-						First attempt on making my own design and its implementation with code.
+						The site is a dictionary with words used by us, programmers on a daily basis.
+						It was made for a work on computer slang in modern English language.
+					</p>
+					<p>
+						The site has two main pages: list of words and their descriptions, and just reduced words that don't need an explanation (e.g. txt - text).
+					</p>
+					<p>
+						The website uses JSON files to store the information about the terms. The content of term pages containes of the word itelf, its definition, and in some cases - instances, videos and images.
 					</p>
 
 					<a class="ts-git" href="https://github.com/TemaSaur/digital-nonsense/">
