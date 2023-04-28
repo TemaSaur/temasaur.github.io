@@ -1,19 +1,19 @@
-# Personal Website 2.0
+# Personal Website (inactive)
  
 Just a website
 
-### Link
+## Link
 
-[TemaSaur.dev](https://temasaur.dev/)
+currently unavailable 
 
-### Technologies used:
+## Technologies used:
 
 - HTML
-- CSS + Sass
+- CSS + SCSS
 - Vanilla JavaScript
-- PHP
+- PHP (for repeating html, email form)
 
-### useless info
+## useless info
 
 the name TemaSaur is my alias, which consists of two parts, Tema (which is my favorite variation of my name) and Saur (the ending of dino\[saur\]), which is actally presented in the logo (favicon) and pfp (kinda ugly saur).
 
